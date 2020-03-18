@@ -1,7 +1,48 @@
 <!DOCTYPE html>
 <html>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/semantic.min.css">
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <div class="ui main text container">
+        <h1 class="ui header">Ron Erick D. Rodriguez</h1>
+        <p>This example shows how to use lazy loaded images, a sticky menu, and a simple text container</p>
+      </div>
+
+
 </body>
+
+<script src="js/semantic.min.js"></script>
+
+<script>
+    $(document)
+      .ready(function() {
+  
+        // fix main menu to page on passing
+        $('.main.menu').visibility({
+          type: 'fixed'
+        });
+        $('.overlay').visibility({
+          type: 'fixed',
+          offset: 80
+        });
+  
+        // lazy load images
+        $('.image').visibility({
+          type: 'image',
+          transition: 'vertical flip in',
+          duration: 500
+        });
+  
+        // show dropdown on hover
+        $('.main.menu  .ui.dropdown').dropdown({
+          on: 'hover'
+        });
+      })
+    ;
+    </script>
 </html>
