@@ -5,70 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <link rel="stylesheet" href="css/semantic.min.css">
+    <link rel="stylesheet" href="assets/components/menu.css">
 
-<body>
+<body">
 
-    
-    <div class="ui borderless main menu">
-        <div class="ui text container">
-        <div class="header item">
-            <img class="logo" src="assets/images/logo.png">
-            Project Name
-        </div>
-        <a href="#" class="item">Blog</a>
-        <a href="#" class="item">Articles</a>
-        <a href="#" class="ui right floated dropdown item">
-            Dropdown <i class="dropdown icon"></i>
-            <div class="menu">
-            <div class="item">Link Item</div>
-            <div class="item">Link Item</div>
-            <div class="divider"></div>
-            <div class="header">Header Item</div>
-            <div class="item">
-                <i class="dropdown icon"></i>
-                Sub Menu
-                <div class="menu">
-                <div class="item">Link Item</div>
-                <div class="item">Link Item</div>
-                </div>
-            </div>
-            <div class="item">Link Item</div>
-            </div>
-        </a>
-        </div>
-    </div>
+   
 
 
 
 </body>
 
 <script src="js/semantic.min.js"></script>
+<script src="js/jquery.min.js"></script>
 
-<script>
-    $(document)
-      .ready(function() {
-  
-        // fix main menu to page on passing
-        $('.main.menu').visibility({
-          type: 'fixed'
-        });
-        $('.overlay').visibility({
-          type: 'fixed',
-          offset: 80
-        });
-  
-        // lazy load images
-        $('.image').visibility({
-          type: 'image',
-          transition: 'vertical flip in',
-          duration: 500
-        });
-  
-        // show dropdown on hover
-        $('.main.menu  .ui.dropdown').dropdown({
-          on: 'hover'
-        });
-      })
-    ;
-    </script>
 </html>
