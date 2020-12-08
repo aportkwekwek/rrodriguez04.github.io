@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project001</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  
+
+  
+<link rel="stylesheet" href="styles.css"></head>
+<body class="mat-typography">
+
+  <app-root></app-root>
+
+<script src="runtime.js" defer></script><script src="polyfills.js" defer></script><script src="vendor.js" defer></script><script src="main.js" defer></script></body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+
+  <script>
+  
+    $(document).ready(function(){
+  
+      $(".navbar-burger").click(function(){
+  
+          $('.navbar-burger').toggleClass("is-active");
+          $('.navbar-menu').toggleClass("is-active");
+  
+      });
+
+    });
+
+        
+    window.addEventListener('DOMContentLoaded', (event) => {
+       
+        jQuery(window).scroll(function() {
+            if (jQuery(window).scrollTop() > 0) {
+                jQuery('#navbarHead').addClass("is-primary");      
+            } else {
+                jQuery('#navbarHead').removeClass("is-primary");
+            }
+        });
+    }); 
+  
+  </script>
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
+
+    
+
+</html>
